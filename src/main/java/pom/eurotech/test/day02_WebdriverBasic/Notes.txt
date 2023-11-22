@@ -1,0 +1,25 @@
+driver.get(“http://www.google.com”) —> Navigates to website
+driver.navigate().to(“http://www.google.com”)—>Navigates to websites
+
+driver.navigate().back()—>goes back previous page
+driver.navigate().forward()—>goes forward after goes back
+driver.navigate().refresh()—>refresh the page
+
+driver.close()—>closes current tab
+driver.quit()—>closes all tabs and everything
+
+driver.getTitle() —>gets the current title from browser
+driver.getCurrentUrl()—> get the url from the browser
+driver.getPageSource()—>gets the source code of the page
+
+
+
+Java--> it is programing language in which we write our tests
+Intellij --> we use it to write and execute our codes/tests (IDE)
+Library/Dependency --> set if prewritten classes , methods which we can add to our code and use
+Selenium-->Automation tool. We are using to automate browsers.
+Maven-->Build management tool,we use it to manage dependencie, for example we added selenium and java faker libraries
+pom.xml--> brain of the maven, we put dependencies and plugins and settings here.
+
+
+
