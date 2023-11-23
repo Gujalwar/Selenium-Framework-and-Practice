@@ -10,12 +10,15 @@ public class IdLocator {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.get("https://demoqa.com/text-box");
         Faker faker = new Faker();
+
         driver.findElement(By.id("userName")).sendKeys(faker.name().fullName());
         driver.findElement(By.id("userEmail")).sendKeys(faker.internet().emailAddress());
         driver.findElement(By.id("currentAddress")).sendKeys(faker.address().fullAddress());
         driver.findElement(By.id("permanentAddress")).sendKeys(faker.address().fullAddress());
+        driver.findElement(By.id("submit")).click();
 
-         Thread.sleep(3000);
-         driver.close();
+
+        Thread.sleep(3000);
+        driver.close();
     }
 }

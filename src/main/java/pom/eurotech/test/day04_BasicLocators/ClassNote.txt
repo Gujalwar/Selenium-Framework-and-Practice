@@ -1,0 +1,35 @@
+asic Locators
+
+We have 8 different locators
+Id
+Name
+Tag name
+className
+LinkText
+PartialLinkText
+XPath
+Css.                                               Faster than Xpath
+
+Which one is lord of locators?
+
+Id—> It will be always unique and first locator we are looking for. If there is an id attribute available for web element we will check is it dynamic or not.
+If it is NOT changing ——static—- we can use it.
+
+How to understand ID value is dynamic?
+While we inspecting the element, refresh the page, if id value is changing we CAN’T use it. Refresh couple of times always to make sure.
+
+Name—>If we cannot use ID, or it is dynamic we look for the name.
+Name locator is not dynamic %99.99 time.
+But name can be duplicate (radio buttons)
+
+TagName—> If we cannot find name or id, we look for tagName
+
+Class Name —> Another attribute for locating elements.
+We will use it later to locate multiple elements in one shot.
+
+When we shouldn’t use class name locator?
+If there is a space in the class attribute value, we CANNOT use it.
+
+LinkText—> Using full text of link to locate link web element on the web page
+
+PartialLinkText—>using part of the link text to locate link web element
