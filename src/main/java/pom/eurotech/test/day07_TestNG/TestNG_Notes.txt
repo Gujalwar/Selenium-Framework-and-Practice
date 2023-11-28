@@ -1,6 +1,9 @@
 TestNG
 Developers write their code and do Unit testing, In Unit testing smallest block of code is tested.
 
+TestNG
+Developers write their code and do Unit testing, In Unit testing smallest block of code is tested.
+
 Java: TestNG and Junit
 C# : Nunit
 Pyhton : pytest
@@ -18,3 +21,21 @@ and run
 
 @BeforeMethod --> runs once before each method with @Test annotations
 @AfterMethod  --> runs once after each of with @Test annotations
+============================
+
+How to ignore some @Test to run?
+@Ignore --> We can put on top of the @Test what we want to ignore
+OR
+we can comment out the @Test annotation
+=============================
+
+@BeforeClass --> runs only once before everything in the class
+@AfterClass  --> runs only once after everything in the class
+
+================================
+Assertion -->this is the class in testNG , it has methods used to do assertion like when we compare values.
+In testing , if assertion fails, rest of the method will NOT execute, it will be ignored/skipped.
+If your code fail in one @Test annotations, it will not effect other @Test s, each if working independently.
+
+Note: Whether your test case fail or not, your before and after method will execute ALWAYS. So even if your code
+is fail, you can quit from driver, close browser.
