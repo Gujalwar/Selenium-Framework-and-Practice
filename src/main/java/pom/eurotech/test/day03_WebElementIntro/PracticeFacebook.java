@@ -16,9 +16,10 @@ public class PracticeFacebook {
         inputEmail.sendKeys("poojagujalwar@rediffmail.com");
         WebElement inputPassword = driver.findElement(By.id("pass"));
         inputPassword.sendKeys("9421302556");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
-        driver.findElement(By.id("loginbutton")).click();
+        WebElement loginBtn = driver.findElement(By.xpath("//button[@id = 'loginbutton']"));
+        loginBtn.click();
         Thread.sleep(3000);
 
         driver.close();
