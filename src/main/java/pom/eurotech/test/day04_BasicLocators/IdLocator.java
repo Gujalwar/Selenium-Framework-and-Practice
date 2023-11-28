@@ -18,6 +18,7 @@ public class IdLocator {
         driver.findElement(By.id("submit")).click();
 
 
+
         Thread.sleep(3000);
         driver.close();
     }
