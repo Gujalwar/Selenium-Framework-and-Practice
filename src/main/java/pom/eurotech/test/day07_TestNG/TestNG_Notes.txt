@@ -1,0 +1,20 @@
+TestNG
+Developers write their code and do Unit testing, In Unit testing smallest block of code is tested.
+
+Java: TestNG and Junit
+C# : Nunit
+Pyhton : pytest
+
+TestNG allows us to run,organize tests, it can do assertions and verifications , generate reports.
+
+@Test --> this is an annotation, it means the method after this @Test is TestNG method. We can run testNg test ,methods.
+
+We can have multiple @Test s i one class
+if we want to run specific test, right click to test name and run or click run button next to it.
+
+To run all the tests inside the one class, right click run button next to the class name or click empty space inside the class
+and run
+
+
+@BeforeMethod --> runs once before each method with @Test annotations
+@AfterMethod  --> runs once after each of with @Test annotations
