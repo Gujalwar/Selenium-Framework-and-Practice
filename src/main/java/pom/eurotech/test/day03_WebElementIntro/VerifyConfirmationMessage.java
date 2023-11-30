@@ -3,6 +3,7 @@ package pom.eurotech.test.day03_WebElementIntro;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import pom.eurotech.test.Utilities.WebDriverFactory;
 
 public class VerifyConfirmationMessage {
@@ -42,7 +43,13 @@ public class VerifyConfirmationMessage {
             System.out.println("Passed");
         }else
             System.out.println("Failed");
-
+        //Actions action = new Actions(driver);
+        //action.moveToElement(driver.findElement(By.xpath("//span[@id = 'navbar-menu-list2-item3-text']"))).build().perform();
+        driver.findElement(By.xpath("//span[@id = 'navbar-menu-list2-item3-text']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//span[text() = 'My Posts']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//span[text() = 'Logout']")).click();
         Thread.sleep(2000);
         driver.close();
 
