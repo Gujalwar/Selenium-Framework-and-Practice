@@ -1,0 +1,23 @@
+===============================
+Radio Buttons
+Radio button is a type of elements in which only one option can be selected
+among group of options.
+(Example : Gender - Male ,Female)
+
+Based on the requirements you might or might not have default option selected.
+
+isSelected()-->if radio button is selected it will return true, if not it will return false
+isEnable()--> method that returns true if the button enable, if not return false
+====================================
+Checkboxes
+
+Checkboxes are type of elements which can be selected or unselected.
+When we have group of checkboxes selecting or unselecting one checkbox does NOT
+affect in the selection of the other one.
+
+Just like a radio buttons we use isSelected() method to check checkboxes are selected or not.
+To select or unselect the checkbox we use click() method
+
+======================================
+isDisplayed() -- > method in Selenium verifies if a certain element is present and displayed.
+If the element present (displayed) then the value returned true, if not returned false
