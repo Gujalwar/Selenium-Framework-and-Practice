@@ -1,4 +1,4 @@
-package pom.eurotech.test.day08_TypeOfElements;
+package pom.eurotech.test.day08_TypeOfElements1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

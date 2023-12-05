@@ -1,4 +1,4 @@
-package pom.eurotech.test.day08_TypeOfElements;
+package pom.eurotech.test.day08_TypeOfElements1;
 
 
 
