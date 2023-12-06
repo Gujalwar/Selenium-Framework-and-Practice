@@ -1,0 +1,61 @@
+WAITS
+Thread.sleep();
+this method is from Java, not selenium.It pauses the program based on
+given milisecond.
+It waits for the duration given. and be careful not use too long or less.
+
+Implicit Wait
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+This wait come from selenium
+1.Amount of time
+2. Unit of time (Second,milisecond,day etc)
+
+How find element methods work?
+We provide locator and try to find elements to do some actions using findElement
+method
+
+if element found
+        --It will return Web element
+if element NOT found
+        a)It will check do we have implicit wait?
+            -it will keep trying to find element up to time we set
+                1.If it is find with in time, it will return Web element
+                2.If it can't find up to time, will return NoSuchElementExeption
+        b)if there is no implicit wait , it will return NoSuchElementExeption
+
+This waits for elements to be found in HTML, it only works when we call
+findElement() methods.
+Implicit wait only waits until the elements located.
+
+implicit wait is set once, then you use rest of the program. If we have many
+findElement() methods , they will all use the same implicit wait.
+
+As long as findElement method finds the element on the HTML, it does NOT
+care is it interactible, visible, clickible or not. It will return the element.
+===========================================
+Explicit Wait
+Sometimes we might locate the element but we cannot interact with it within certain time.
+we have to wait until it is visible, clickable, enable has certains text or dissapear.
+
+When we have to wait for these cases, we will use explicit wait.
+ 2 steps to use explicit wait, first create the object pass parameter.
+ WebDriverWait wait = new WebDriverWait(driver,10);
+ WebDriverWait -->class used explicit waits
+ it takes 2 parameters driver , time in seconds
+ use object to wait until specific conditions for webelement or case
+ *wait.until(ExpectedConditions.elementToBeClickable(inputBox));*
+ Explicit wait waits for the condition to complete, once condition is met, it
+ will stop waiting.If the condition is not met and the time runs out and
+ we got TimeoutException
+
+ Implicit Wait
+ call it once (set of driver)
+ waits while trying to findElement
+ wait until element found or time runs out
+ applies for all findElement methods
+
+ Explicit Wait
+ call every time you need it
+ wait until condition is met or time runs out
+ wait for different conditions(interactible,visible,invisible,clickible etc)
