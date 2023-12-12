@@ -3,7 +3,7 @@ package pom.eurotech.test.day04_BasicLocators;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pom.eurotech.test.Utilities.WebDriverFactory;
+import pom.eurotech.utilities.WebDriverFactory;
 
 public class NameLocators {
     public static void main(String[] args) throws InterruptedException {

@@ -1,0 +1,57 @@
+Day-14 PROPERTIES & SINGLETON DESIGN PATTERN
+
+STARTING FRAMEWORK
+
+    What is Automation Framework?
+        Automation framework is an integrated system, organization of packages, files, classes, tools in a way that
+        it makes writing and maintaining automated tests easy.
+        A good framework must be easy to understand, easy to use, easy to scale, reusable, easy to maintain and report.
+
+    We have 4 different problems about the automation framework?
+		1- What if the browser changes?
+		    Chrome->Firefox->Edge
+		2- What if the url changes?
+		    Dev Environment     : http://dev.eurotech.study/login
+		    QA Environment      : http://qa.eurotech.study/login
+		    Staging Environment : http://stg.eurotech.study/login
+		    Product Environment : http://eurotech.study/login
+		3- What if the credentials are changed?
+		    username : test12@eurotech.study  --> admin_test@eurotech.study
+		    password : Test1234               --> AdminT1234
+		4- What if any locator changes in application?
+		    This is for upcoming topic ;-)
+
+Properties File
+    How to create configuration properties file
+        1.  Right click on the name of the project
+        2.  New —>File
+        3.  Enter Name : configuration.properties
+        4.  Enter
+    * File extension has to be ".properties"
+
+
+    Properties file works like a control center. We manage our browser, url, database and couple of user information
+    from this file and able to change values.
+    It has key and value structure
+
+ConfigurationReader Class
+    Create a properties reader class/file
+        1.  Right click to utilities package
+        2.  New—> Class
+        3.  Enter Name : ConfigurationReader
+        4.  OK
+    To read and reach the values/datas in configuration.properties file, we need ConfigurationReader class which allows
+    us to read properties file type.
+
+
+Singleton Design Pattern
+    Singleton design pattern : defines a class that has only one instance and provides a global point of access to it
+    Advantage of singleton design pattern : Saves memory because object is not created at each request. Only single
+    instance is reused again and again.
+    usage of singleton design pattern : It is mostly used in multi-threaded (paralel test) and database application.
+                                        In configuration settings etc.
+                                        thread= run time
+    Singleton design let us use the same version of an object across to whole problem
+
+new WebDriverFactory
+    We created Driver class under utilities package

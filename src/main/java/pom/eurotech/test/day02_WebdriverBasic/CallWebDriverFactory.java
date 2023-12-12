@@ -1,7 +1,7 @@
 package pom.eurotech.test.day02_WebdriverBasic;
 
 import org.openqa.selenium.WebDriver;
-import pom.eurotech.test.Utilities.WebDriverFactory;
+import pom.eurotech.utilities.WebDriverFactory;
 
 public class CallWebDriverFactory {
     public static void main(String[] args) {

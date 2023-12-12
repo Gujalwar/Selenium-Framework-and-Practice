@@ -3,7 +3,7 @@ package pom.eurotech.test.day04_BasicLocators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pom.eurotech.test.Utilities.WebDriverFactory;
+import pom.eurotech.utilities.WebDriverFactory;
 
 public class TagName {
     public static void main(String[] args) throws InterruptedException {

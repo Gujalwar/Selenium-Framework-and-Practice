@@ -1,0 +1,6 @@
+ACTIONS
+
+Actions class is used to do advance user interaction like mouse hover, double click, drag and drop etc.
+Actions class is class comes from selenium and created by passing the web driver object as a constructor.
+        //moveToElement() --> move your mouse to web element (hover over)
+        //perform() --> perform the action, complete the action

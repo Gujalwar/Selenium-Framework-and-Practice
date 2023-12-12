@@ -2,7 +2,7 @@ package pom.eurotech.test.day04_BasicLocators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pom.eurotech.test.Utilities.WebDriverFactory;
+import pom.eurotech.utilities.WebDriverFactory;
 
 public class DemoGoogle {
     public static void main(String[] args) throws InterruptedException {
