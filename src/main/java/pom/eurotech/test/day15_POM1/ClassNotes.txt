@@ -1,0 +1,19 @@
+What is POM?
+
+Page Object Model is a Design Pattern which is used in Selenium.
+
+By Page Object Model, we can create java class for each page of the web application,
+and store the relevant web elements and methods into their related classes. We can store related
+re-usable utility methods in its "page" class as well. We are able to centralize re-usable important
+test data which are in our configuration.properties and utility methods.
+
+Instead of using .findElement method we use @FindBy annotation In this design pattern. Every time
+we want to use WebElement which is located by using @FindBy annotation, it will be re-located in
+the line that we are using.
+
+StaleElementReferenceException is solved by POM Design pattern. Because every time we try to use
+the WebElement, the reference of the Web Element will be refreshed. Therefore, no more StaleElementReferenceException.
+
+We can use PAGE OBJECT MODEL DESIGN PATTERN, because we create centralized repository for our WebElements
+and it provides REUSABILITY, LESS and CLEANER CODE, it is EASY TO MAINTAIN, and COLLABORATION BETWEEN TEAM
+MEMBERS becomes EASIER.

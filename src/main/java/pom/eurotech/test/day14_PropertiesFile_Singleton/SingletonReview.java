@@ -13,4 +13,11 @@ public class SingletonReview {
         driver1.get("http://www.google.com");
 
     }
-}
+
+
+
+    }
+
+
+
+

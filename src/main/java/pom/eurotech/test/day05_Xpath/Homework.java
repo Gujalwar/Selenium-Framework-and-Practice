@@ -1,4 +1,4 @@
-package pom.eurotech.test.day_05;
+package pom.eurotech.test.day05_Xpath;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
