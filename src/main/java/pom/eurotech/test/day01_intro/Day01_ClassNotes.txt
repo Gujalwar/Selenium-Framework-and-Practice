@@ -13,7 +13,7 @@ MavenRepository
  menu, Click on "Tree Appearance" and select "Flatten Packages" and "Compact Middle Packages".
 We remove the ticks.
 
-Since we are creating a Maven project, we need to build it. Additions to the pom.xml file where we first created the project
+Since we are creating a Maven project, we need to build it. Additions to the com.xml file where we first created the project
 We need to do it.
 
 When you search for maven repository on Google, click on https://mvnrepository.com/ from the results or directly click on this
@@ -23,10 +23,10 @@ The feature we are looking for in the version we will choose here is that it is 
 considering the number of uses.
 That's why we select 3.141.59 as the version and click. On the opened page
 (https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.141.59) under Maven heading
-We click on the xml structure and thus copy it. Go to the pom.xml file in IntelliJ and add the properties tag,
+We click on the xml structure and thus copy it. Go to the com.xml file in IntelliJ and add the properties tag,
 We open a new opening and closing tag below <dependencies> </dependencies>. It may give a warning with red color.
 No problem. You will see the letter M in the upper right corner of the page and a blue update sign below it. When you
-click on this, you will have downloaded and updated the dependency or plugin you added. Add this to the pom.xml file
+click on this, you will have downloaded and updated the dependency or plugin you added. Add this to the com.xml file
 and add it before.
 You need to do this for every dependency and plugin that has never been added.
 
@@ -35,7 +35,7 @@ dependency information. We type "webdrivermanager" in the search box here and se
 page that opens as a result of the search (https://mvnrepository.com/search?q=webdrivermanager). When we click on
 the page we come to (https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager), we look at both the
 stable and the latest version and select the latest version. Again, since we have clicked and copied the xml structure
-under Maven, we go to the pom.xml file in IntelliJ and paste it into the dependencies tag, after the Selenium Java
+under Maven, we go to the com.xml file in IntelliJ and paste it into the dependencies tag, after the Selenium Java
 dependency section.
 It will signal with a red sign. Again, we download it by clicking on the M in the upper right.
 
@@ -43,7 +43,7 @@ After the process is completed, to download the javafaker dependency that will h
 again and type "javafaker" into the search box and search. Click on the Java Faker result on the page that opens
 (https://mvnrepository.com/search?q=javafaker), and click on the latest version, 1.0.2, on the page that opens
 (https://mvnrepository.com/artifact/com.github.javafaker/javafaker). By clicking, we copy the dependency on the page
-that opens, paste it into the dependencies tag in the pom.xml file in IntelliJ, then click on the M at the top right
+that opens, paste it into the dependencies tag in the com.xml file in IntelliJ, then click on the M at the top right
 to download it. JavaFaker provides us with fake name, number, address, etc. information that we can use as test data.
 It is a third party tool. So you normally do not use it in companies because there may be security vulnerabilities in
 third party applications that are open source. We will use it for educational purposes here. However, in the real test
@@ -53,9 +53,9 @@ The company provides it or you make it up.
 There may always be differences between the versions you use and the versions used by companies.
 So you will use whatever the company uses.
 
-pom.xml file is the brain of the project. All dependencies and plugins to be used in the project are added and managed here.
+com.xml file is the brain of the project. All dependencies and plugins to be used in the project are added and managed here.
 
 We are establishing a project from scratch. You will do these with every new project establishment. Maybe you will copy
-all the dependencies and plugins in the pom.xml file that you use in another project and paste them into the pom.xml
-file of the new project, but you cannot build your project without the pom.xml file. Sometimes you will not need
+all the dependencies and plugins in the com.xml file that you use in another project and paste them into the com.xml
+file of the new project, but you cannot build your project without the com.xml file. Sometimes you will not need
 to do these operations because the company offers a ready-made project.

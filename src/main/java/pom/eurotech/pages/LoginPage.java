@@ -7,8 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import pom.eurotech.utilities.ConfigurationReader;
 
-import java.util.List;
-
 public class LoginPage extends BasePage {
     @FindBy(id = "rcc-confirm-button")
     public WebElement understandBtn;

@@ -11,7 +11,7 @@ import java.util.Map;
 public class ExcelUtil {
 
     /*
-     * This is a utility for reading from writing to excel files.
+     * This is a utility for reading from writing to Excel files.
      * it works with xls and xlsx files.
      */
         private Sheet workSheet;

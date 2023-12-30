@@ -26,6 +26,37 @@ public class DashboardPage extends BasePage {
 
     @FindBy(xpath = "(//tr[@id='dashboard-experince-item-raw'])[1]/td[1]")
     public WebElement companyName;
+    @FindBy(xpath = "//button[@class = 'btn btn-danger'][1]")
+    public WebElement deleteExperience;
+
+    @FindBy(xpath = "//a[@class = 'btn btn-light'][2]")
+    public WebElement addExperience;
+    @FindBy(id = "addexperience-jobtitle-input")
+    public  WebElement jobTitle;
+
+    @FindBy(id = "addexperience-company-input")
+    public  WebElement company;
+    @FindBy(id = "addexperience-location-input")
+    public WebElement location;
+    @FindBy(id = "addexperience-date-input")
+    public WebElement fromDate;
+
+    @FindBy(id = "addexperience-status-input")
+    public WebElement currentJob;
+
+    @FindBy(xpath = "//input[@name = 'to']")
+    public WebElement toDate;
+
+    @FindBy(id = "addexperience-description-input")
+    public WebElement jobDescrription;
+
+    @FindBy(xpath = "//input[@type = 'submit']")
+    public WebElement submitBtn;
+
+    @FindBy(xpath = "//div[text() = 'Experience Removed']")
+    public WebElement popUpSucess;
+
+
 
 
     public String getTitle(String companyName) {

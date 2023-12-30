@@ -19,7 +19,7 @@ Intellij --> we use it to write and execute our codes/tests (IDE)
 Library/Dependency --> set if prewritten classes , methods which we can add to our code and use
 Selenium-->Automation tool. We are using to automate browsers.
 Maven-->Build management tool,we use it to manage dependencie, for example we added selenium and java faker libraries
-pom.xml--> brain of the maven, we put dependencies and plugins and settings here.
+com.xml--> brain of the maven, we put dependencies and plugins and settings here.
 
 
 
